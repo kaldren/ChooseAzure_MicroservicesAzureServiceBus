@@ -7,7 +7,7 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 
-app.MapPost("/ticket", async (Ticket ticket) =>
+app.MapPost("/tickets", async (Ticket ticket) =>
 {
     Console.WriteLine($"Ticket received: {ticket}");
 
